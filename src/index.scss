@@ -1,0 +1,36 @@
+:root {
+  --text-color: #ffffffde;
+  --bg-color: #242424;
+  color: var(--text-color);
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+  background-color: var(--bg-color);
+
+  color-scheme: light dark;
+
+  font-synthesis: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (prefers-color-scheme: light) {
+    --text-color: #213547;
+    --bg-color: #ffffff;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-weight: inherit;
+}
+
+body {
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  height: 100vh;
+}

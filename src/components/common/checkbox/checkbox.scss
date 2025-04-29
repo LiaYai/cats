@@ -1,0 +1,23 @@
+@mixin no-event {
+  pointer-events: none;
+}
+
+.label {
+  transition: transform 0.25s ease;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.04);
+  }
+  &:has(.checkbox[disabled]) {
+    @include no-event;
+    opacity: 0.5;
+  }
+}
+
+.checkbox {
+  margin-right: 0.5rem;
+  cursor: pointer;
+  &[disabled] {
+    @include no-event;
+  }
+}
